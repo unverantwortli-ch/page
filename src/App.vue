@@ -3,6 +3,7 @@
     <header>
       <h1>Unverantwortli.ch</h1>
       <p>Die Unverantwortlich-Liste hält Unternehmen, die in der Vergangenheit nicht aktiv am Responsible Disclosure Verfahren teilgenommen haben.</p>
+      <p>Das stellt eine Gefahr für die allgemeine Sicherheit und für die Melder dar.</p>
     </header>
     <table>
       <thead>
@@ -20,6 +21,11 @@
       </tr>
       </tbody>
     </table>
+    <footer>
+      <p>Die Daten stammen aus der <a href="https://github.com/unverantwortli-ch/list" target="_blank">Liste auf github.com</a>. Möchtest du die Liste erweitern? Erstelle einfach einen Pull request.</p>
+      <p><a href="https://github.com/unverantwortli-ch/list" target="_blank">Die Liste auf github.com</a></p>
+      <p><a href="https://github.com/unverantwortli-ch/page" target="_blank">Das Projekt auf github.com</a></p>
+    </footer>
   </div>
 </template>
 
@@ -65,9 +71,19 @@ body {
 header {
   display: block;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 1rem .75rem;
   border: 1px solid lightgray;
   margin-bottom: 1rem;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+footer p {
+  margin: .25rem 0 0 0;
 }
 
 h1 {
@@ -75,8 +91,8 @@ h1 {
   margin-bottom: .25rem;
 }
 
-p {
-  margin: 0;
+header p {
+  margin: .25rem 0;
 }
 
 table {
@@ -99,6 +115,15 @@ table td {
 
 table > tbody > tr:nth-of-type(2n) {
   background: #efefef;
+}
+
+a {
+  color: #3737c5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 </style>
