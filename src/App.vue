@@ -99,6 +99,7 @@ table {
   border-spacing: 0;
   border: 1px solid lightgray;
   border-bottom: none;
+  margin: auto;
 }
 
 table > thead th,
