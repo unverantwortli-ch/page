@@ -58,7 +58,7 @@ body, html {
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
