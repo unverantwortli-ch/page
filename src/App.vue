@@ -41,9 +41,6 @@ export default {
     async fetchList() {
       const yaml = await axios.get('https://raw.githubusercontent.com/unverantwortli-ch/list/main/list.yml')
       this.fools = jsYaml.load(yaml.data).fools;
-      this.fools.push(jsYaml.load(yaml.data).fools[0])
-      this.fools.push(jsYaml.load(yaml.data).fools[0])
-      this.fools.push(jsYaml.load(yaml.data).fools[0])
     }
   }
 }
