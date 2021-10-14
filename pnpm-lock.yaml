@@ -5,14 +5,18 @@ specifiers:
   '@vue/cli-plugin-eslint': ~4.5.0
   '@vue/cli-service': ~4.5.0
   '@vue/compiler-sfc': ^3.0.0
+  axios: ^0.23.0
   babel-eslint: ^10.1.0
   core-js: ^3.6.5
   eslint: ^6.7.2
   eslint-plugin-vue: ^7.0.0
+  js-yaml: ^4.1.0
   vue: ^3.0.0
 
 dependencies:
+  axios: 0.23.0
   core-js: 3.18.3
+  js-yaml: 4.1.0
   vue: 3.2.20
 
 devDependencies:
@@ -2100,6 +2104,10 @@ packages:
       sprintf-js: 1.0.3
     dev: true
 
+  /argparse/2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+    dev: false
+
   /arr-diff/4.0.0:
     resolution: {integrity: sha1-1kYQdP6/7HHn4VI1dhoyml3HxSA=}
     engines: {node: '>=0.10.0'}
@@ -2221,6 +2229,14 @@ packages:
   /aws4/1.11.0:
     resolution: {integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==}
     dev: true
+
+  /axios/0.23.0:
+    resolution: {integrity: sha512-NmvAE4i0YAv5cKq8zlDoPd1VLKAqX5oLuZKs8xkJa4qi6RGn0uhCYFjWtHHC9EM/MwOwYWOs53W+V0aqEXq1sg==}
+    dependencies:
+      follow-redirects: 1.14.4_debug@4.3.2
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /babel-eslint/10.1.0_eslint@6.8.0:
     resolution: {integrity: sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==}
@@ -4259,7 +4275,6 @@ packages:
         optional: true
     dependencies:
       debug: 4.3.2
-    dev: true
 
   /for-in/1.0.2:
     resolution: {integrity: sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=}
@@ -5328,6 +5343,13 @@ packages:
       argparse: 1.0.10
       esprima: 4.0.1
     dev: true
+
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+    dev: false
 
   /jsbn/0.1.1:
     resolution: {integrity: sha1-peZUwuWi3rXyAdls77yoDA7y9RM=}
