@@ -10,14 +10,18 @@
       <tr>
         <th>Unternehmen</th>
         <th>Jahr des Vorfalles</th>
-        <th>Quelle</th>
+        <th>Quelle(n)</th>
       </tr>
       </thead>
       <tbody>
       <tr v-for="fool in fools" v-bind:key="fool.name">
         <td>{{ fool.name }}</td>
         <td>{{ fool.year }}</td>
-        <td><a :href="fool.proof" target="_blank">Quelle</a></td>
+        <td>
+          <div v-for="proof in fool.proofs" v-bind:key="proof">
+            <a :href="proof" target="_blank">Quelle</a>
+          </div>
+        </td>
       </tr>
       </tbody>
     </table>
