@@ -17,7 +17,7 @@
       <tr v-for="fool in fools" v-bind:key="fool.name">
         <td>{{ fool.name }}</td>
         <td>{{ fool.year }}</td>
-        <td><a :href="fool.proof" target="_blank">{{ fool.proof }}</a></td>
+        <td><a :href="fool.proof" target="_blank">Quelle</a></td>
       </tr>
       </tbody>
     </table>
