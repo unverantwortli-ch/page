@@ -111,6 +111,7 @@ body
     border: 1px solid lightgray
     border-bottom: none
     margin: auto
+    width: 100%
     thead
       td,
       th
