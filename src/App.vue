@@ -61,15 +61,15 @@ export default {
 
 html, body
   height: 100%
+  margin: 0
 
 body
-  height: 100%
-  padding: 1rem
-  margin: 0
   display: flex
   align-items: center
   justify-content: center
   font-family: sans-serif
+  #wrapper
+    padding: 1rem
   h1
     margin-top: 0
     margin-bottom: .25rem
