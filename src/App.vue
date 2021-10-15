@@ -2,7 +2,8 @@
   <div id="wrapper">
     <header>
       <h1>Unverantwortli.ch</h1>
-      <p>Die Unverantwortlich-Liste hält Unternehmen, die in der Vergangenheit nicht aktiv am Responsible Disclosure Verfahren teilgenommen haben.</p>
+      <p>Die Unverantwortlich-Liste hält Unternehmen und Organisationen, die in der Vergangenheit nicht aktiv am Responsible Disclosure teilgenommen haben.</p>
+      <p>Die Unternehmen und Organisationen haben den jeweiligen Melder einer Sicherheitslücke angezeigt oder verklagt.</p>
       <p>Das stellt eine Gefahr für die allgemeine Sicherheit und für die Melder dar.</p>
     </header>
     <table>
