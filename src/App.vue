@@ -26,10 +26,10 @@
       </tbody>
     </table>
     <footer>
-      <p>Hosted by GitHub Pages</p>
       <p>Die Daten stammen aus der <a href="https://github.com/unverantwortli-ch/list" target="_blank">Liste auf github.com</a>. Möchtest du die Liste erweitern? Erstelle einfach einen Pull request.</p>
       <p><a href="https://github.com/unverantwortli-ch/list" target="_blank">Die Liste auf github.com</a></p>
       <p><a href="https://github.com/unverantwortli-ch/page" target="_blank">Das Projekt auf github.com</a></p>
+      <p id="hostedBy">Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
     </footer>
   </div>
 </template>
@@ -57,79 +57,60 @@ export default {
 }
 </script>
 
-<style>
-body, html {
-  height: 100%;
-}
+<style lang="sass">
 
-body {
-  margin: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-}
+html, body
+  height: 100%
 
-#wrapper {
-}
+body
+  height: 100%
+  padding: 1rem
+  margin: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: sans-serif
+  h1
+    margin-top: 0
+    margin-bottom: .25rem
+  a
+    color: #3737c5
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  header
+    display: block
+    text-align: center
+    padding: 1rem 1rem .75rem
+    border: 1px solid lightgray
+    margin-bottom: 1rem
+    p
+      margin: .25rem 0
+  footer
+    display: block
+    text-align: center
+    padding-top: 2rem
 
-header {
-  display: block;
-  text-align: center;
-  padding: 1rem 1rem .75rem;
-  border: 1px solid lightgray;
-  margin-bottom: 1rem;
-}
-
-footer {
-  display: block;
-  text-align: center;
-  padding-top: 2rem;
-}
-
-footer p {
-  margin: .25rem 0 0 0;
-}
-
-h1 {
-  margin-top: 0;
-  margin-bottom: .25rem;
-}
-
-header p {
-  margin: .25rem 0;
-}
-
-table {
-  border-spacing: 0;
-  border: 1px solid lightgray;
-  border-bottom: none;
-  margin: auto;
-}
-
-table > thead th,
-table > thead td {
-  text-align: left;
-  background: #d3d3d3;
-}
-
-table th,
-table td {
-  padding: .5rem;
-  border-bottom: 1px solid lightgray;
-}
-
-table > tbody > tr:nth-of-type(2n) {
-  background: #efefef;
-}
-
-a {
-  color: #3737c5;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
+    p
+      margin: .25rem 0 0 0
+  table
+    border-spacing: 0
+    border: 1px solid lightgray
+    border-bottom: none
+    margin: auto
+    thead
+      td,
+      th
+        text-align: left
+        background: #d3d3d3
+    tbody
+      tr:nth-of-type(2n)
+        background: #efefef
+    td,
+    th
+      padding: .5rem
+      border-bottom: 1px solid lightgray
+  #hostedBy
+    font-weight: bold
+    font-size: .75rem
 </style>
