@@ -20,7 +20,7 @@
         <td>{{ fool.year }}</td>
         <td>
           <div v-for="proof in fool.proofs" v-bind:key="proof">
-            <a :href="proof" target="_blank">Quelle</a>
+            <a :href="proof" target="_blank">Quelle ({{ getProofInfo(proof) }})</a>
           </div>
         </td>
       </tr>
@@ -58,6 +58,11 @@ export default {
     async fetchList() {
       const yaml = await axios.get('https://raw.githubusercontent.com/unverantwortli-ch/list/main/list.yml')
       this.fools = jsYaml.load(yaml.data).fools;
+    },
+    getProofInfo(proof) {
+      var a = document.createElement('a');
+      a.href = proof;
+      return a.hostname;
     }
   }
 }
