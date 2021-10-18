@@ -138,5 +138,9 @@ body
     display: block
     color: gray
     margin: .5rem 2rem 2rem
-
+@media screen and (max-width: 600px)
+  th, td
+    border-bottom: none !important
+    display: block !important
+    text-align: center !important
 </style>
