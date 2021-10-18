@@ -82,10 +82,10 @@ body
     margin: auto
   #wrapper
     padding: 1rem
-    width: 1150px;
-    margin: auto;
-    max-width: 100%;
-    max-width: calc(100% - 2rem);
+    width: 1150px
+    margin: auto
+    max-width: 100%
+    max-width: calc(100% - 2rem)
   h1
     margin-top: 0
     margin-bottom: .25rem
