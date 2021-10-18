@@ -75,12 +75,13 @@ html, body
   margin: 0
 
 body
-  display: flex
-  align-items: center
-  justify-content: center
   font-family: sans-serif
   #wrapper
     padding: 1rem
+    width: 1150px;
+    margin: auto;
+    max-width: 100%;
+    max-width: calc(100% - 2rem);
   h1
     margin-top: 0
     margin-bottom: .25rem
