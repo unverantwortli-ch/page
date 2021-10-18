@@ -76,6 +76,10 @@ html, body
 
 body
   font-family: sans-serif
+  display: flex
+  #app
+    width: 100%
+    margin: auto
   #wrapper
     padding: 1rem
     width: 1150px;
