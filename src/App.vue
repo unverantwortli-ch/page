@@ -143,4 +143,6 @@ body
     border-bottom: none !important
     display: block !important
     text-align: center !important
+  tr > td:last-of-type
+    border-bottom: 1px solid #d3d3d3 !important
 </style>
