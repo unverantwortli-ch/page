@@ -14,7 +14,7 @@
       <td>{{ fool.year }}</td>
       <td>{{ countries.getName(fool.country, "de", {select: "official"}) }}</td>
       <td>
-        <Proof v-for="proof in fool.proofs" v-bind:key="proof" :proof="proof" />
+        <ProofLink v-for="proof in fool.proofs" v-bind:key="proof" :proof="proof" />
       </td>
     </tr>
     </tbody>
@@ -22,15 +22,15 @@
 </template>
 
 <script>
-import Proof from "./Proof";
+import ProofLink from "./ProofLink";
 import axios from "axios";
 import jsYaml from "js-yaml";
 import countries from "i18n-iso-countries";
 countries.registerLocale(require("i18n-iso-countries/langs/de.json"));
 
 export default {
-  components: {Proof},
-  name: "Fools",
+  components: {ProofLink},
+  name: "FoolsTable",
   data() {
     return {
       fools: [],

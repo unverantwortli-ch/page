@@ -1,22 +1,22 @@
 <template>
   <div id="wrapper">
-    <Top />
-    <Fools />
-    <Bottom />
+    <TopBar />
+    <FoolsTable />
+    <BottomBar />
   </div>
 </template>
 
 <script>
-import Fools from "./Fools";
-import Bottom from "./Bottom";
-import Top from "./Top";
+import FoolsTable from "./FoolsTable";
+import BottomBar from "./BottomBar";
+import TopBar from "./TopBar";
 
 export default {
   name: 'App',
   components: {
-    Fools,
-    Bottom,
-    Top
+    FoolsTable,
+    BottomBar,
+    TopBar
   }
 }
 </script>

@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "Top"
+  name: "TopBar"
 }
 </script>
 

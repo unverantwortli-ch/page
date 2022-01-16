@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: "Proof",
+  name: "ProofLink",
   props: ['proof'],
   methods: {
     getProofInfo(proof) {

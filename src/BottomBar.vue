@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "Bottom"
+  name: "BottomBar"
 }
 </script>
 
