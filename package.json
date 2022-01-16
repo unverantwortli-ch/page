@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "i18n-iso-countries": "^7.2.0",
     "js-yaml": "^4.1.0",
     "node-sass": "^6.0.1",
     "sass": "^1.43.2",
